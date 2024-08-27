@@ -4,146 +4,180 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css/styles.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <a href="">Logo</a>
-        <p>Call Us:</p>
-        <a href="tel:(+22) 123 456 7890">(+22) 123 456 7890</a>
+    <header class="header">
+      <div class="header-info">
+        <a class="logo" href="">Logo</a>
+        <p class="call-us">Call Us:</p>
+        <a class="header-tel" href="tel:(+22) 123 456 7890"
+          >(+22) 123 456 7890</a
+        >
       </div>
       <div>
-        <nav>
-          <div>
-            <ul>
-              <li><a href="/" target="_blank">Home</a></li>
-              <li><a href="/" target="_blank">Pages</a></li>
-              <li><a href="/" target="_blank">About</a></li>
-              <li><a href="/" target="_blank">Services</a></li>
-              <li><a href="/" target="_blank">Contact</a></li>
+        <nav class="nav">
+          <div class="header-nav-list">
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link" href="/" target="_blank">Home</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="/" target="_blank">Pages</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="/" target="_blank">About</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="/" target="_blank">Services</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link" href="/" target="_blank">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-soc-list-container">
+            <ul class="header-soc-list">
+              <li class="header-soc-item">
+                <a class="header-soc-link" href="/" target="_blank">F</a>
+              </li>
+              <li class="header-soc-item">
+                <a class="header-soc-link" href="/" target="_blank">X</a>
+              </li>
+              <li class="header-soc-item">
+                <a href="/" target="_blank">In</a>
+              </li>
             </ul>
           </div>
           <div>
-            <ul>
-              <li><a href="/" target="_blank">F</a></li>
-              <li><a href="/" target="_blank">X</a></li>
-              <li><a href="/" target="_blank">In</a></li>
-            </ul>
-          </div>
-          <div>
-            <button type="button">reservation</button>
+            <button class="reservation-btn" type="button">reservation</button>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <section>
-        <p>Welcome to Beautyness!!!</p>
-        <h1>Beauty is power a smile is its sword.</h1>
-        <p>
+      <section class="welcome">
+        <p class="welcome-pre-title">Welcome to Beautyness!!!</p>
+        <h1 class="welcome-main-title">
+          Beauty is power a smile is its sword.
+        </h1>
+        <p class="welcome-after-title">
           There are many variation of passages are Ipsum available, majority
           have suffered alteration in some form.
         </p>
-        <button type="button">make a reservation</button>
+        <button class="reservation-btn" type="button">
+          make a reservation
+        </button>
         <img
+          class="welcome-img"
           src="./photos/hero.jpg"
           alt="women with flowers"
           width="550"
           height="545"
         />
       </section>
-      <section>
-        <div>
-          <ul>
-            <li>
+      <section class="services">
+        <div class="services-container">
+          <ul class="services-list">
+            <li class="services-item">
               <img
+                class="services-img"
                 src="./photos/spa.jpg"
                 alt="spa s massage"
                 width="330"
                 height="250"
               />
-              <h3>Spa & Massage</h3>
-              <p>
+              <h3 class="services-title">Spa & Massage</h3>
+              <p class="services-after-title">
                 If you are going to use a passage offer Lorem Ipsum, you need to
                 be sure hidden in the middle of text.
               </p>
-              <button type="button">read more</button>
+              <button class="services-btn" type="button">read more</button>
             </li>
 
-            <li>
+            <li class="services-item">
               <img
+                class="services-img"
                 src="./photos/hair.jpg"
                 alt="hair s beauty"
                 width="330"
                 height="250"
               />
-              <h3>Hair & Beauty</h3>
-              <p>
+              <h3 class="services-title">Hair & Beauty</h3>
+              <p class="services-after-title">
                 If you are going to use a passage offer Lorem Ipsum, you need to
                 be sure hidden in the middle of text.
               </p>
-              <button type="button">read more</button>
+              <button class="services-btn" type="button">read more</button>
             </li>
-            <li>
+            <li class="services-item">
               <img
+                class="services-img"
                 src="./photos/body.jpg"
+                class="services-after-title"
                 alt="body treatments"
                 width="330"
                 height="250"
               />
-              <h3>Body Treatments</h3>
-              <p>
+              <h3 class="services-title">Body Treatments</h3>
+              <p class="services-after-title">
                 If you are going to use a passage offer Lorem Ipsum, you need to
                 be sure hidden in the middle of text.
               </p>
-              <button type="button">read more</button>
+              <button class="services-btn" type="button">read more</button>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <p>About Us</p>
-          <h2>The Beauty is about being Comfortable in your own skin!</h2>
-          <p>
+      <section class="about-us">
+        <div class="about-ut-container">
+          <p class="about-us-pretitle">About Us</p>
+          <h2 class="about-us-title">
+            The Beauty is about being Comfortable in your own skin!
+          </h2>
+          <p class="about-us-after-title">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, buying to
             injected humour, or randomised words which don't look even many
             desktop publishing packages.
           </p>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class="about-us-cards">
+          <ul class="about-us-cards-list">
+            <li class="about-us-cards-item">
               <img
+                class="about-us-cards-img"
                 src="./icons/beauty.png"
                 alt="beauty experts"
                 width="49"
                 height="72"
               />
-              <p>Beauty Experts</p>
+              <p class="about-us-cards-title">Beauty Experts</p>
             </li>
-            <li>
+            <li class="about-us-cards-item">
               <img
+                class="about-us-cards-img"
                 src="./icons/services.png"
                 alt="great services"
                 width="73"
                 height="74"
               />
-              <p>Great Services</p>
+              <p class="about-us-cards-title">Great Services</p>
             </li>
-            <li>
+            <li class="about-us-cards-item">
               <img
+                class="about-us-cards-img"
                 src="./icons/genuine.png"
                 alt="100% Genuine"
                 width="65"
                 height="78"
               />
-              <p>100% Genuine</p>
+              <p class="about-us-cards-title">100% Genuine</p>
             </li>
           </ul>
         </div>
       </section>
+      <!--  -->
       <section>
         <div>
           <p>Our Services</p>
