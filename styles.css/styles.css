@@ -1,3 +1,4 @@
+/* HEADER */
 .header {
 }
 .header-info {
@@ -42,9 +43,16 @@
 .welcome-main-title {
 }
 .welcome-after-title {
+  color: #555555;
+}
+.reservation-btn {
+  background-color: #5c8692;
+  color: #ffffff;
 }
 .welcome-img {
 }
+
+/* SERVICES SECTION */
 .services {
 }
 .services-container {
@@ -56,20 +64,29 @@
 .services-img {
 }
 .services-title {
+  color: #141414;
 }
 .services-after-title {
+  color: #555555;
 }
 .services-btn {
+  color: #141414;
+  background-color: transparent;
+  border: 2px solid #5c8692;
 }
+/* ABOUT US SECTION */
 .about-us {
 }
 .about-ut-container {
 }
 .about-us-pretitle {
+  color: #5c8692;
 }
 .about-us-title {
+  color: #141414;
 }
 .about-us-after-title {
+  color: #555555;
 }
 .about-us-cards {
 }
@@ -80,4 +97,120 @@
 .about-us-cards-img {
 }
 .about-us-cards-title {
+  color: #141414;
+}
+
+/* OUR SERVICES */
+.services {
+}
+.services-photo-container {
+}
+.services-pre-title {
+  color: #5c8692;
+}
+.services-title {
+  color: #141414;
+}
+.services-photo {
+}
+
+.services-name {
+  color: #141414;
+}
+.services-price {
+  color: #141414;
+}
+
+.services-after-title {
+  color: #555555;
+}
+
+.services-btn {
+  color: #141414;
+  border: 2px solid #5c8692;
+  background-color: transparent;
+}
+/* FEEDBACK SECTION */
+.feedback {
+}
+.feedback-pre-title {
+}
+
+.feedback-list {
+}
+.feedback-item {
+}
+.feedback-text {
+}
+.feedback-img {
+}
+/* BENEFITS SECTION */
+.benefits {
+}
+.benefits-pre-title {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-img {
+}
+.benefits-title-cards {
+}
+.benefits-text {
+}
+
+/* DISCOUNT SECTION */
+.discount {
+}
+.discount-pre-title {
+}
+.discount-title {
+}
+.discount-after-title {
+}
+.discount-list {
+}
+.discount-item {
+}
+.discount-contact {
+}
+.discount-contact-info {
+}
+.discount-card {
+}
+.discount-card-pre-title {
+}
+.discount-card-count {
+}
+.discount-card-after-title {
+}
+/* OUR BLOG SECTION */
+
+.our-blog {
+}
+.blog-pre-title {
+}
+.blog-title {
+}
+.blog-list {
+}
+.blog-item {
+}
+.blog-img {
+}
+.blog-card-pre-title {
+}
+.blog-card-title {
+}
+.blog-card-after-title {
+}
+.blog-card-btn {
+}
+/* FOOTER */
+.footer {
+}
+.footer-so-media-list {
+}
+.footer-so-media-item {
 }
