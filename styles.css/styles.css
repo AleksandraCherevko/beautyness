@@ -1,4 +1,10 @@
 /* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --accent-color: #5c8692;
   --text-color: #555555;
@@ -22,7 +28,17 @@ h3 {
   line-height: 1.3;
   letter-spacing: -0.01em;
   color: #141414;
-  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
@@ -38,6 +54,7 @@ a {
 }
 
 .pre-title {
+  margin-bottom: 9px;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
@@ -47,25 +64,53 @@ a {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1920px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 img {
   display: block;
-  /* width: 100%;
-  height: auto; */
+  max-width: 100%;
+  /* height: auto; */ */
 }
 
 .no-scroll {
   overflow: hidden;
 }
+
+button {
+  cursor: pointer;
+}
+
+/* BUTTON ANIMATION */
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 /* HEADER */
 .header > .container {
   width: 1800px;
+  display: flex;
 }
 .header {
+  padding: 38px 60px 38px 60px;
 }
 .header-info {
 }
@@ -104,6 +149,7 @@ img {
 }
 
 .reservation-btn {
+  padding: 24px 36px 24px 36px;
   background-color: #7a9ca5;
   color: #ffffff;
   border: none;
@@ -114,12 +160,20 @@ img {
   text-transform: uppercase;
 }
 
+.reservation-btn:hover,
+.reservation-btn:focus {
+  animation: bounce 1s;
+  color: var(--title-color);
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+}
 /* WELCOME */
 
 .welcome > .container {
   width: 1132px;
 }
 .welcome {
+  padding: 235px 428px 235px 360px;
 }
 .welcome-pre-title {
   color: var(--accent-color);
@@ -127,13 +181,14 @@ img {
 .welcome-main-title {
 }
 .welcome-after-title {
+  margin-top: 24px;
   color: #555555;
-
   font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
 }
 .reservation-btn {
+  margin-top: 34px;
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -145,6 +200,7 @@ img {
   width: 1200px;
 }
 .services {
+  padding: 145px 360px 145px 360px;
 }
 .services-container {
 }
@@ -155,11 +211,15 @@ img {
 .services-img {
 }
 .services-title {
+  margin-top: 26px;
   color: #141414;
 }
 .services-after-title {
+  margin-top: 11px;
 }
 .services-btn {
+  margin-top: 30px;
+  padding: 18px 43px 18px 43px;
   color: var(--title-color);
   background-color: transparent;
   border: 2px solid var(--accent-color);
@@ -169,8 +229,9 @@ img {
   width: 1200px;
 }
 .about-us {
+  padding: 145px 360px 145px 360px;
 }
-.about-ut-container {
+.about-us-container {
 }
 .about-us-pretitle {
   color: var(--accent-color);
@@ -179,9 +240,11 @@ img {
   color: #141414;
 }
 .about-us-after-title {
+  margin-top: 16px;
   line-height: 1.65;
 }
 .about-us-cards {
+  margin-top: 37px;
 }
 .about-us-cards-list {
 }
@@ -190,6 +253,7 @@ img {
 .about-us-cards-img {
 }
 .about-us-cards-title {
+  margin-top: 16px;
   font-family: "Playfair Display", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -198,21 +262,24 @@ img {
 }
 
 /* OUR SERVICES */
-.services > .container {
+.our-services > .container {
   width: 1198px;
 }
-.services {
+.our-services {
+  padding: 145px 360px 145px 360px;
 }
 .services-photo-container {
 }
 .services-pre-title {
   color: var(--accent-color);
 }
-.services-item {
+.our-services-item {
 }
 .services-photo {
 }
-
+.our-services-title {
+  width: 659px;
+}
 .services-name {
   font-family: "Playfair Display", sans-serif;
   font-size: 22px;
@@ -233,7 +300,7 @@ img {
   color: var(--title-color);
 }
 
-.services-after-title {
+.our-services-after-title {
   color: var(--text-color);
   line-height: 1.65;
   letter-spacing: 0.02em;
@@ -250,11 +317,22 @@ img {
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
 }
+
+.services-btn:hover,
+.services-btn:focus {
+  background-color: #7a9ca5;
+  color: #ffffff;
+  border: none;
+}
 /* FEEDBACK SECTION */
 .feedback > .container {
   width: 1200px;
 }
 .feedback {
+  padding: 145px 360px 145px 360px;
+}
+.feedback-title {
+  margin-top: 2px;
 }
 .feedback-pre-title {
 }
@@ -275,6 +353,7 @@ img {
   width: 1200px;
 }
 .benefits {
+  padding: 145px 360px 145px 360px;
 }
 .benefits-pre-title {
 }
@@ -298,6 +377,7 @@ img {
   width: 1199px;
 }
 .discount {
+  padding: 145px 360px 145px 360px;
 }
 .discount-pre-title {
 }
@@ -346,6 +426,7 @@ img {
   width: 1200px;
 }
 .our-blog {
+  padding: 145px 360px 145px 360px;
 }
 .blog-pre-title {
 }
@@ -377,6 +458,7 @@ img {
   text-align: left;
 }
 .blog-card-btn {
+  padding: 24px 41px 24px 41px;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.25;
@@ -386,11 +468,19 @@ img {
   border: 2px solid var(--accent-color);
   background-color: transparent;
 }
+
+.blog-card-btn:hover,
+.blog-card-btn:focus {
+  background-color: #7a9ca5;
+  color: #ffffff;
+  border: none;
+}
 /* FOOTER */
 .footer > .container {
   width: 1200px;
 }
 .footer {
+  padding: 65px 360px 65px 360px;
 }
 .footer-so-media-list {
 }
