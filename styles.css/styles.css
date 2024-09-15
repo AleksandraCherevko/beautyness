@@ -22,11 +22,14 @@ h3 {
   line-height: 1.3;
   letter-spacing: -0.01em;
   color: #141414;
+  margin: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
@@ -43,7 +46,25 @@ a {
   text-transform: uppercase;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  /* width: 100%;
+  height: auto; */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
 /* HEADER */
+.header > .container {
+  width: 1800px;
+}
 .header {
 }
 .header-info {
@@ -94,6 +115,10 @@ a {
 }
 
 /* WELCOME */
+
+.welcome > .container {
+  width: 1132px;
+}
 .welcome {
 }
 .welcome-pre-title {
@@ -116,6 +141,9 @@ a {
 }
 
 /* SERVICES SECTION */
+.services > .container {
+  width: 1200px;
+}
 .services {
 }
 .services-container {
@@ -137,6 +165,9 @@ a {
   border: 2px solid var(--accent-color);
 }
 /* ABOUT US SECTION */
+.about-us > .container {
+  width: 1200px;
+}
 .about-us {
 }
 .about-ut-container {
@@ -167,6 +198,9 @@ a {
 }
 
 /* OUR SERVICES */
+.services > .container {
+  width: 1198px;
+}
 .services {
 }
 .services-photo-container {
@@ -217,6 +251,9 @@ a {
   border: 2px solid var(--accent-color);
 }
 /* FEEDBACK SECTION */
+.feedback > .container {
+  width: 1200px;
+}
 .feedback {
 }
 .feedback-pre-title {
@@ -234,6 +271,9 @@ a {
 .feedback-img {
 }
 /* BENEFITS SECTION */
+.benefits > .container {
+  width: 1200px;
+}
 .benefits {
 }
 .benefits-pre-title {
@@ -254,6 +294,9 @@ a {
 }
 
 /* DISCOUNT SECTION */
+.discount > .container {
+  width: 1199px;
+}
 .discount {
 }
 .discount-pre-title {
@@ -299,7 +342,9 @@ a {
   color: #ffffff;
 }
 /* OUR BLOG SECTION */
-
+.our-blog > .container {
+  width: 1200px;
+}
 .our-blog {
 }
 .blog-pre-title {
@@ -320,12 +365,31 @@ a {
   color: var(--accent-color);
 }
 .blog-card-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 .blog-card-after-title {
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 .blog-card-btn {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  color: var(--title-color);
+  text-align: center;
+  border: 2px solid var(--accent-color);
+  background-color: transparent;
 }
 /* FOOTER */
+.footer > .container {
+  width: 1200px;
+}
 .footer {
 }
 .footer-so-media-list {
