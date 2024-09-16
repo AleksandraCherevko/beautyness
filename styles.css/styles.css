@@ -64,15 +64,16 @@ a {
 }
 
 .container {
-  width: 1920px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 img {
   display: block;
   max-width: 100%;
-  /* height: auto; */ */
+  /* height: auto; */
 }
 
 .no-scroll {
@@ -106,15 +107,20 @@ button {
 
 /* HEADER */
 .header > .container {
-  width: 1800px;
+  width: 1200px;
   display: flex;
+  align-items: center;
 }
 .header {
-  padding: 38px 60px 38px 60px;
+  padding: 24px 40px 24px 40px;
 }
 .header-info {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .logo {
+  margin-right: 46px;
 }
 .call-us {
   font-weight: 600;
@@ -129,12 +135,22 @@ button {
   color: var(--title-color);
 }
 .nav {
+  display: flex;
+  align-items: center;
 }
 .header-nav-list {
 }
 .header-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 32px;
 }
 .header-item {
+}
+
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+  text-decoration: underline;
 }
 .header-link {
   line-height: 1.25px;
@@ -142,7 +158,11 @@ button {
 .header-soc-list-container {
 }
 .header-soc-list {
+  display: flex;
+  gap: 30px;
+  margin-right: 32px;
 }
+
 .header-soc-item {
 }
 .header-soc-link {
@@ -167,55 +187,103 @@ button {
   background-color: transparent;
   border: 2px solid var(--accent-color);
 }
+
 /* WELCOME */
 
 .welcome > .container {
-  width: 1132px;
+  width: 1000px;
+  display: flex;
 }
 .welcome {
-  padding: 235px 428px 235px 360px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: #ebf3f5;
 }
+
+.welcome-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .welcome-pre-title {
   color: var(--accent-color);
 }
 .welcome-main-title {
+  width: 300px;
 }
 .welcome-after-title {
+  width: 480px;
   margin-top: 24px;
   color: #555555;
   font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
 }
-.reservation-btn {
+.welcome-reservation-btn {
+  padding: 24px 36px 24px 36px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   margin-top: 34px;
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.welcome-reservation-btn:hover,
+.welcome-reservation-btn:focus {
+  animation: bounce 1s;
+  color: var(--title-color);
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+}
+.welcome-container-photo {
 }
 .welcome-img {
 }
 
 /* SERVICES SECTION */
 .services > .container {
-  width: 1200px;
+  width: 1050px;
+  display: flex;
+  align-items: center;
 }
 .services {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .services-container {
 }
 .services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .services-item {
+  flex-basis: calc((100% - 20px) / 3);
 }
 .services-img {
 }
 .services-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
   margin-top: 26px;
   color: #141414;
 }
 .services-after-title {
-  margin-top: 11px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  margin-top: 10px;
+  width: 328px;
 }
 .services-btn {
   margin-top: 30px;
@@ -224,12 +292,17 @@ button {
   background-color: transparent;
   border: 2px solid var(--accent-color);
 }
+
 /* ABOUT US SECTION */
 .about-us > .container {
-  width: 1200px;
+  width: 1100px;
+  display: flex;
 }
 .about-us {
-  padding: 145px 360px 145px 360px;
+  background-color: #ebf3f5;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-us-container {
 }
@@ -237,9 +310,11 @@ button {
   color: var(--accent-color);
 }
 .about-us-title {
+  width: 435px;
   color: #141414;
 }
 .about-us-after-title {
+  width: 529px;
   margin-top: 16px;
   line-height: 1.65;
 }
@@ -247,8 +322,25 @@ button {
   margin-top: 37px;
 }
 .about-us-cards-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 .about-us-cards-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #1e2c30;
+}
+
+.about-us-cards-item:hover {
+  transform: translateZ(10px) scale(1.05); /* двигаем вперед и увеличиваем */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .about-us-cards-img {
 }
@@ -263,10 +355,17 @@ button {
 
 /* OUR SERVICES */
 .our-services > .container {
-  width: 1198px;
+  width: 1100px;
+  text-align: center;
+}
+
+.pre-title,
+.our-services-title {
+  margin: 0;
 }
 .our-services {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .services-photo-container {
 }
@@ -274,19 +373,29 @@ button {
   color: var(--accent-color);
 }
 .our-services-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted #ccc;
+  padding: 10px 0;
 }
 .services-photo {
 }
 .our-services-title {
+  margin-bottom: 50px;
+
   width: 659px;
 }
+
 .services-name {
   font-family: "Playfair Display", sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--title-color);
+  flex-basis: 40%;
 }
+
 .accent {
   font-family: "Playfair Display", sans-serif;
   font-size: 22px;
@@ -324,6 +433,15 @@ button {
   color: #ffffff;
   border: none;
 }
+
+.services-container {
+  display: flex;
+}
+
+.services-container-second {
+  display: flex;
+}
+
 /* FEEDBACK SECTION */
 .feedback > .container {
   width: 1200px;
@@ -350,34 +468,50 @@ button {
 }
 /* BENEFITS SECTION */
 .benefits > .container {
-  width: 1200px;
+  width: 1000px;
 }
 .benefits {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-pre-title {
+  text-align: center;
+  margin-bottom: 9px;
 }
 .benefits-title {
+  text-align: center;
+
+  margin-bottom: 43px;
 }
 .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+.benefits-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .benefits-img {
 }
 .benefits-title-cards {
+  margin-top: 20px;
   font-size: 26px;
   line-height: 1.2;
 }
 .benefits-text {
+  margin-top: 11px;
   line-height: 1.65;
   letter-spacing: 0.02em;
 }
 
 /* DISCOUNT SECTION */
 .discount > .container {
-  width: 1199px;
+  width: 1100px;
 }
 .discount {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .discount-pre-title {
 }
