@@ -359,10 +359,10 @@ button {
   text-align: center;
 }
 
-.pre-title,
-.our-services-title {
-  margin: 0;
+.pre-title {
+  text-align: center;
 }
+
 .our-services {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -383,8 +383,7 @@ button {
 }
 .our-services-title {
   margin-bottom: 50px;
-
-  width: 659px;
+  text-align: center;
 }
 
 .services-name {
@@ -444,21 +443,26 @@ button {
 
 /* FEEDBACK SECTION */
 .feedback > .container {
-  width: 1200px;
+  width: 1100px;
 }
 .feedback {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .feedback-title {
+  text-align: center;
   margin-top: 2px;
 }
 .feedback-pre-title {
 }
 
 .feedback-list {
+  margin-top: 40px;
+  display: flex;
 }
 .feedback-item {
 }
+
 .feedback-text {
   font-size: 19px;
   line-height: 1.8;
@@ -507,20 +511,40 @@ button {
 
 /* DISCOUNT SECTION */
 .discount > .container {
-  width: 1100px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .discount {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: #edf5f7;
 }
 .discount-pre-title {
 }
 .discount-title {
+  width: 435px;
+  margin-bottom: 14px;
 }
 .discount-after-title {
+  margin-bottom: 37px;
+  width: 534px;
   line-height: 1.75;
 }
+
+.discount-card-contact {
+  display: flex;
+  background-color: white;
+}
+
+.discount-card-contact-data {
+  padding: 18px 40px 18px 40px;
+  border: 1px solid #95bfcb;
+}
 .discount-list {
+  display: flex;
+  flex-direction: column;
 }
 .discount-item {
 }
@@ -536,9 +560,19 @@ button {
   font-weight: 500;
   line-height: 1.5;
 }
+
+.discount-contact-info:hover {
+  font-weight: bold;
+}
 .discount-card {
+  padding: 12px 34px 12px 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #1e2c30;
 }
+
 .discount-card-pre-title {
   font-size: 15px;
   font-weight: 800;
@@ -555,24 +589,38 @@ button {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 /* OUR BLOG SECTION */
 .our-blog > .container {
-  width: 1200px;
+  width: 1100px;
 }
 .our-blog {
-  padding: 145px 360px 145px 360px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .blog-pre-title {
+  margin-bottom: 4px;
+  text-align: center;
 }
 .blog-title {
+  margin-bottom: 40px;
+  text-align: center;
 }
 .blog-list {
+  display: flex;
+  gap: 24px;
 }
 .blog-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .blog-img {
 }
+.blog-card-text {
+  padding: 30px 26px 30px 26px;
+  background-color: #edf5f7;
+}
 .blog-card-pre-title {
+  text-align: left;
   font-size: 13px;
   font-weight: 700;
   line-height: 1.25;
@@ -580,6 +628,8 @@ button {
   color: var(--accent-color);
 }
 .blog-card-title {
+  margin-top: 8px;
+  text-align: left;
   font-family: "Playfair Display", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -587,11 +637,15 @@ button {
   letter-spacing: 0.02em;
 }
 .blog-card-after-title {
+  margin-top: 14px;
+
   line-height: 1.55;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 .blog-card-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
   padding: 24px 41px 24px 41px;
   font-size: 14px;
   font-weight: 800;
@@ -611,12 +665,73 @@ button {
 }
 /* FOOTER */
 .footer > .container {
-  width: 1200px;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
 }
 .footer {
-  padding: 65px 360px 65px 360px;
+  background-color: #1e2c30;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.footer-so-media-list {
+
+.footer-container-icon-soc {
+  display: flex;
 }
-.footer-so-media-item {
+.footer-soc-media-list {
+  display: flex;
+}
+.footer-lists-pages {
+  display: flex;
+}
+
+.utility-title {
+  width: 126px;
+}
+.footer-title {
+  margin-bottom: 21px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.footer-link {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
+
+.footer-address {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-item {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.schedulle {
+  display: flex;
+  flex-wrap: wrap;
 }
