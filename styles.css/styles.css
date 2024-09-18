@@ -111,21 +111,32 @@ button {
   display: flex;
   align-items: center;
 }
+
 .header {
   padding: 24px 40px 24px 40px;
 }
 .header-info {
+  text-align: center;
   display: flex;
-  align-items: center;
   margin-right: auto;
 }
-.logo {
-  margin-right: 46px;
+
+.header-logo-link {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  margin-left: 12px;
+  color: #141414;
 }
+
 .call-us {
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.01em;
+  text-align: left;
   color: var(--title-color);
 }
 .header-tel {
@@ -133,6 +144,14 @@ button {
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--title-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  text-decoration: underline;
+  background-color: #ebf3f5;
+  border-radius: 10px;
+  padding: 8px;
 }
 .nav {
   display: flex;
@@ -142,8 +161,8 @@ button {
 }
 .header-list {
   display: flex;
-  gap: 24px;
-  margin-right: 32px;
+  gap: 20px;
+  margin-right: 25px;
 }
 .header-item {
 }
@@ -151,24 +170,41 @@ button {
 .header-list .header-link:hover,
 .header-list .header-link:focus {
   text-decoration: underline;
+  background-color: #ebf3f5;
+  border-radius: 10px;
+  padding: 8px;
 }
 .header-link {
   line-height: 1.25px;
 }
 .header-soc-list-container {
+  display: flex;
 }
 .header-soc-list {
+  padding: 0;
+  margin: 0;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   margin-right: 32px;
 }
-
 .header-soc-item {
+  display: flex;
+  align-items: center;
 }
 .header-soc-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.header-soc-link:hover .header-soc-icon {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
 }
 
 .reservation-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 24px 36px 24px 36px;
   background-color: #7a9ca5;
   color: #ffffff;
@@ -178,6 +214,7 @@ button {
   line-height: 1.25;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .reservation-btn:hover,
@@ -187,7 +224,9 @@ button {
   background-color: transparent;
   border: 2px solid var(--accent-color);
 }
-
+.reserv-btn-icon {
+  stroke: white;
+}
 /* WELCOME */
 
 .welcome > .container {
@@ -197,7 +236,12 @@ button {
 .welcome {
   padding-top: 180px;
   padding-bottom: 180px;
-  background-color: #ebf3f5;
+  background: linear-gradient(to right, #f0f0f0 50%, transparent 50%),
+    url("../photos/background.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .welcome-container-text {
@@ -241,7 +285,9 @@ button {
   border: 2px solid var(--accent-color);
 }
 .welcome-container-photo {
+  transform: translateX(-50px);
 }
+
 .welcome-img {
 }
 
