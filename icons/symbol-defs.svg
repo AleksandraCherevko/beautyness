@@ -25,6 +25,10 @@
 <path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M10.023 2.667v5.333"></path>
 <path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.356 13.333h24"></path>
 </symbol>
+<symbol id="icon-feedback" viewBox="0 0 41 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M40.007 16l-15.792 15.792v-31.584h15.792v15.792z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M15.792 16l-15.792 15.792v-31.584h15.792v15.792z"></path>
+</symbol>
 
 </defs>
 </svg>
