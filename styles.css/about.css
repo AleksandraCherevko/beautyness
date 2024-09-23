@@ -1,0 +1,120 @@
+/* STORY HERO */
+
+.story-hero > .container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(to right, #1e2c30, #1e2c30),
+    url(/photos/about-background-second.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-hero-pretitle {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.story-hero-title {
+  margin-bottom: 32px;
+  width: 649px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  width: 648px;
+  color: #ffffff;
+}
+
+.story-hero-reservation-btn {
+  padding: 23px 36px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #ffffff;
+  background-color: #5c8692;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.story-hero-reservation-btn:hover,
+.story-hero-reservation-btn:focus {
+  background-color: transparent;
+  border: 2px solid #5c8692;
+}
+
+/* VALUES */
+
+.values > .container {
+  width: 659px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.values {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.values-pretitle {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5c8692;
+  text-align: center;
+}
+
+.values-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.values-item {
+  display: flex;
+}
+
+.values-card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin-right: 32px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1e2c30;
+  background-color: #f2fcff;
+}
+
+.values-pretitle {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  color: #141414;
+}
