@@ -20,10 +20,10 @@
 <path d="M16.2 17.882l0.824-5.412h-5.235v-3.529c0-1.529 0.706-2.941 3.059-2.941h2.412v-4.647c0 0-2.176-0.412-4.235-0.412-4.294 0-7.118 2.647-7.118 7.353v4.176h-4.824v5.412h4.824v13.176h5.882v-13.176h4.412z"></path>
 </symbol>
 <symbol id="icon-calendar" viewBox="0 0 32 32">
-<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M24.689 5.333h-18.667c-1.473 0-2.667 1.194-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667h18.667c1.473 0 2.667-1.194 2.667-2.667v-18.667c0-1.473-1.194-2.667-2.667-2.667z"></path>
-<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M20.689 2.667v5.333"></path>
-<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M10.023 2.667v5.333"></path>
-<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.356 13.333h24"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M24.689 5.333h-18.667c-1.473 0-2.667 1.194-2.667 2.667v18.667c0 1.473 1.194 2.667 2.667 2.667h18.667c1.473 0 2.667-1.194 2.667-2.667v-18.667c0-1.473-1.194-2.667-2.667-2.667z"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M20.689 2.667v5.333"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M10.023 2.667v5.333"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M3.356 13.333h24"></path>
 </symbol>
 <symbol id="icon-feedback" viewBox="0 0 41 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M40.007 16l-15.792 15.792v-31.584h15.792v15.792z"></path>

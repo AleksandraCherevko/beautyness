@@ -228,6 +228,11 @@ button {
 .reserv-btn-icon {
   stroke: white;
 }
+
+.reserv-btn-icon:hover,
+.reserv-btn-icon:focus {
+  stroke: black;
+}
 /* WELCOME */
 
 .welcome > .container {
@@ -682,7 +687,6 @@ button {
 
 .discount-card-contact {
   display: flex;
-  background-color: white;
 }
 
 .discount-card-contact-data {
